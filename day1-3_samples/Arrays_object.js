@@ -55,7 +55,7 @@ var information={
 console.log(information.country.state.city.area.adress)
 console.log(information.country.state.city)
 console.log(information.country.state)
-
+console.log(information.country.state.city.area)
 
 
 
