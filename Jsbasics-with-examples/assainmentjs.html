@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+   function f1(){
+    var changeref= document.getElementById("change")
+    // alert(changeref.innerHTML);
+    var inputA1ref= document.getElementById("A1")
+   if(changeref.innerHTML!="GOOD MORNING"){
+       changeref.innerHTML ="gud morning"
+   } 
+   }
+   function f2(){
+    var changeref= document.getElementById("change")
+    // alert(changeref.innerHTML);
+    var inputA1ref= document.getElementById("A2")
+   if(changeref.innerHTML!="GOOD AFTERNOON"){
+       changeref.innerHTML ="gud afternoon"
+   } 
+   }
+   function f3(){
+    var changeref= document.getElementById("change")
+    // alert(changeref.innerHTML);
+    var inputA1ref= document.getElementById("A3")
+   if(changeref.innerHTML!="GOOD EVENING"){
+       changeref.innerHTML ="gud evening"
+   } 
+   }
+   function f4(){
+    var changeref= document.getElementById("change")
+    // alert(changeref.innerHTML);
+    var inputA1ref= document.getElementById("A4")
+   if(changeref.innerHTML!="GOOD NIGHT"){
+       changeref.innerHTML ="gud night"
+   } 
+   }
+
+</script>
+<style>
+    body{
+        background-color: coral;
+    }
+</style>
+
+</head>
+<body style="text-align: center;font-family:cursive;color:rgb(9, 224, 81)">
+    <h1 id="change">WELCOME TO JAVASCRIPT</h1>
+    <input style="background-color: darkcyan";id="A1" type="button" value="gud morning"onclick="f1()"/>
+    <input  style="background-color: darkcyan";id="A2"type="button" value="gud afternoon"onclick="f2()"/>
+    <input style="background-color: darkcyan"id="A3" type="button" value="gud evening"onclick="f3()"/>
+    <input  style="background-color: darkcyan"id="A4"type="button" value="gud night"onclick="f4()"/>
+</body>
+
+</html>

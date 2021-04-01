@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>clouser</title>
+    <script>
+function fn(){
+    var i=0
+    return function(){
+        i=i+1
+        document.getElementById('btn').innerText="clickme"+i+"times"
+        consol.log(i)
+    }
+    var fn1=fn()
+}
+</script>
+</head>
+<body>
+<button id="btn" onclick="fn()">click me</button>
+<button onclick="fn1()">dont click me</button>
+</body>
+</html>

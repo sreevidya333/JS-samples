@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+         function f1(){
+             var passwordref= document.getElementById("password")
+             var btnref= document.getElementById("btn")
+             if (passwordref.getAttribute("type")===("password")){
+                 passwordref.setAttribute("type","text")
+                 btnref.value="hide password"
+             } else{
+                passwordref.setAttribute("type","password")
+                btnref.value="show password"
+             }
+         }
+     </script>
+    </head>
+    <body>
+      <div style="text-align: center;">
+        password:<input id="password"type="password">
+        <input id="btn" value="show password"type="button" onclick="f1()"/>
+    
+    
+    </div>
+    </body>
+</html>

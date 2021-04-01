@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>new document</title>
+<script>
+  function f1(){
+    //   alert("Today is holiday")
+        var inputn1ref= document.getElementById("n1")
+        // console.log(inputn1ref.value)
+        var inputp1ref= document.getElementById("p1")
+        // console.log(inputp1ref.value)
+          var newref=  document.getElementById("new")
+          var oldref=  document.getElementById("old")
+           newref .innerText= inputn1ref.value
+           oldref .innerText= inputp1ref.value
+  }         
+
+
+</script>
+</head>
+<body>
+ <div style="text-align: center;" >
+  <p>
+    name:<input id="n1"type="name"/></p>
+  <p>
+    password:<input id="p1" type="password"/></p>
+    <p>
+     button:<input type="button" value="login"onclick="f1()"/>
+    </p>
+    <p id="new"></p>
+    <p id="old"></p>
+
+
+ </div>
+</body>
+</html>

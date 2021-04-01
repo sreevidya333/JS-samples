@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+     function f1(){
+        //  alert("This is alert")
+        var inputt1ref= document.getElementById('t1')
+        // console.log(inputt1ref.value)
+        var inputpasswordref= document.getElementById("password")
+        // console.log(inputpasswordref.value)
+        var p1ref= document.getElementById("p1")
+        var p2ref= document.getElementById("p2")
+        p1ref.innerText= inputt1ref.value
+        p2ref.innerText= inputpasswordref.value
+    }
+
+    </script>
+    
+
+<title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <p>
+    name:<input id="t1"type="text"/></p>
+        <p>
+    password:<input id="password" type="password"/></p>
+         <p>
+    button:<input type="button" value="login" onclick="f1()"/>         
+         </p>
+    
+     <p id="p1"></p>
+     <p id="p2"></p>
+
+</div>
+</body>
+</html>
+
